@@ -68,7 +68,7 @@
 		<body>
 			
 			<div id="form">
-				<form method="post" action="register.php">
+				<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 					<p id="fn">First Name: <input type="text" name="name1" placeholder="Enter First name" class="fnf"></p>
 					<p id="ln">Last Name: <input type="text" name="name2" placeholder="Enter Last name" class="fnf"></p>
 					<p id="email">Email: <input type="email" name="email" placeholder="john@example.com" class="fnf" id="emailspace"></p>
